@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">TestRelevant</string>
+    <string name="sign_up">SIGN UP</string>
+    <string name="birthday">Birthday</string>
+    <string name="refferal_code_optional">Refferal Code (Optional)</string>
+    <string name="favorite_location_optional">Favorite Location (Optional)</string>
+    <string name="optin_lorem_ipsum_dolor">Optin lorem ipsum dolor...</string>
+    <string name="facebook_app_id">263055254544706</string>
+    <string name="fb_login_protocol_scheme">fb263055254544706</string>
+    <string name="returning_users">returning users</string>
+    <string name="rewards">REWARDS</string>
+    <string name="my_rewards">MY REWARDS</string>
+</resources>

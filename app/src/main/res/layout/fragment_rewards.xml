@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    >
+
+    <TextView
+        android:id="@+id/txtRewards"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:textAlignment="center"
+        android:text="@string/rewards"
+        android:textColor="@color/White"
+        android:textSize="35sp"
+        android:drawableLeft="@drawable/side_menu_icon"
+        android:background="@drawable/header"/>
+    <ImageView
+        android:id="@+id/slikaBull"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtRewards"/>
+    <View
+        android:id="@+id/view2"
+        android:layout_centerHorizontal="true"
+        android:layout_width="300dp"
+        android:layout_height="2dp"
+        android:layout_below="@+id/slikaBull"
+        android:background="@color/grey_700"
+        android:layout_marginTop="10dp"
+        ></View>
+    <LinearLayout
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/view2"
+        android:orientation="horizontal"
+        android:id="@+id/linear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/svezda1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:id="@+id/svezda2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+
+            android:id="@+id/rewards"
+            android:text="@string/my_rewards"
+            android:textSize="27sp"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:id="@+id/svezda3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:id="@+id/svezda4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+    <ImageView
+        android:id="@+id/slikaTocki"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/linear"
+        android:layout_width="300dp"
+        android:layout_height="5dp" />
+
+    <LinearLayout
+        android:layout_below="@+id/slikaTocki"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/MyRV"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+
+    </LinearLayout>
+
+</RelativeLayout>

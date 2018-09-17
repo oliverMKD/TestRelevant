@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:id="@+id/signUppp"
+    >
+
+    <TextView
+        android:id="@+id/txtSignUp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:textAlignment="center"
+        android:text="@string/sign_up"
+        android:textColor="@color/White"
+        android:textSize="35sp"
+        android:drawableLeft="@drawable/side_menu_icon"
+        android:background="@drawable/header"/>
+
+    <EditText
+        android:id="@+id/Birthday"
+        android:layout_below="@+id/txtSignUp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/text_input"
+        android:layout_width="300dp"
+        android:layout_centerInParent="true"
+        android:hint="@string/birthday"
+        android:textAlignment="textStart"
+        android:textColorHint="@color/grey_700"
+        android:layout_height="50dp" />
+    <EditText
+        android:id="@+id/Reff"
+        android:layout_below="@+id/Birthday"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/text_input"
+        android:layout_width="300dp"
+        android:layout_centerInParent="true"
+        android:hint="@string/refferal_code_optional"
+        android:textAlignment="textStart"
+        android:textColorHint="@color/grey_700"
+        android:layout_height="50dp" />
+    <EditText
+        android:id="@+id/Loc"
+        android:layout_below="@+id/Reff"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/text_input"
+        android:layout_width="300dp"
+        android:layout_centerInParent="true"
+        android:hint="@string/favorite_location_optional"
+        android:textAlignment="textStart"
+        android:textColorHint="@color/grey_700"
+        android:layout_height="50dp" />
+    <ImageView
+        android:layout_below="@+id/Loc"
+        android:id="@+id/stikla"
+        android:layout_marginLeft="35dp"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="10dp"/>
+    <TextView
+        android:id="@+id/txtOOOO"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAlignment="textStart"
+        android:layout_marginTop="10dp"
+        android:textSize="17sp"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@+id/stikla"
+        android:layout_below="@+id/Loc"
+        android:layout_centerInParent="true"
+        android:text="@string/optin_lorem_ipsum_dolor"/>
+    <Button
+        android:id="@+id/login_button"
+        android:layout_width="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content"
+        android:background="@drawable/sign_up_with_facebook"
+        android:layout_gravity="center_horizontal"
+        android:layout_below="@+id/txtOOOO"
+        android:layout_marginTop="20dp"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="30dp" />
+
+</RelativeLayout>

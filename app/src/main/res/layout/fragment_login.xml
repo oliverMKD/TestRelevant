@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/maincontainer"
+    android:background="@drawable/background"
+   >
+
+    <TextView
+        android:id="@+id/txtWelcome"
+        android:layout_marginTop="50dp"
+        android:textSize="60sp"
+        android:textAllCaps="true"
+        android:textAlignment="center"
+        android:text="WELCOME"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/login_button"
+        android:layout_width="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content"
+        android:background="@drawable/sign_up_with_facebook"
+        android:layout_gravity="center_horizontal"
+        android:layout_below="@+id/txtWelcome"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="30dp" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="300dp"
+        android:layout_centerInParent="true"
+        android:layout_height="2dp"
+        android:layout_below="@+id/login_button"
+        android:background="@color/grey_700"
+        ></View>
+
+    <TextView
+        android:layout_below="@+id/view"
+        android:layout_marginTop="30dp"
+        android:textSize="25sp"
+        android:textAllCaps="true"
+        android:textAlignment="center"
+        android:id="@+id/txtReturning"
+        android:text="@string/returning_users"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:layout_below="@+id/txtReturning"
+        android:id="@+id/signIn"
+        android:background="@drawable/sign_in"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/terms"
+        android:layout_below="@+id/signIn"
+        android:textAllCaps="true"
+        android:textSize="15sp"
+        android:textAlignment="center"
+        android:layout_marginTop="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="privacy policy | terms &amp; conditions"
+        tools:ignore="HardcodedText" />
+
+</RelativeLayout>
